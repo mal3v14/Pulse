@@ -1,0 +1,48 @@
+@use "base/variables";
+
+.advantages {
+    padding: 70px 0;
+    background-color: variables.$white-color;
+
+    @media screen and (max-width: 576px) {
+        padding: 40px 0;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: black;
+    }
+
+    &__wrapper {
+        margin-top: 65px;
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+
+        img {
+            height: 70px;
+            width: 70px;
+        }
+    }
+
+
+
+    &__subtitle {
+        font-weight: 700;
+        font-size: 18px;
+        margin-top: 35px;
+        color: black;
+    }
+
+    &__text {
+        max-width: 280px;
+        font-weight: 300;
+        font-size: 14px;
+        text-align: center;
+        color: black;
+        margin-top: 20px;
+    }
+}
