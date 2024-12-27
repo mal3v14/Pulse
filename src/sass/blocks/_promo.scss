@@ -1,0 +1,72 @@
+@use "base/variables";
+
+
+.promo {
+
+    min-height: 650px;
+    padding: 21px 0 93px 0;
+    background: url(../../img/bg.jpg) center center/ cover no-repeat;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 90px;
+    }
+
+    &__header {
+        font-weight: 700;
+        font-size: 42px;
+        text-transform: uppercase;
+        color: variables.$white-color;
+        // line-height: 24px;
+    }
+
+    &__subheader {
+        margin-top: 17px;
+        font-weight: 500;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: variables.$white-color;
+        // line-height: 24px;
+    }
+
+    &__icons {
+        margin-top: 60px;
+        min-width: 425px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    &__icon {
+        width: 110px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 14px;
+        color: variables.$white-color;
+
+        img {
+            margin-bottom: 20px;
+            display: block;
+            margin-bottom: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &__link {
+        font-weight: 500;
+        font-size: 16px;
+        text-align: right;
+        color: variables.$white-color;
+        margin-top: 18px;
+
+        a {
+            text-decoration: underline;
+            text-transform: uppercase;
+            color: variables.$white-color;
+        }
+    }
+}
