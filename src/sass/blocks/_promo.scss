@@ -3,7 +3,7 @@
 
 .promo {
 
-    max-height: 650px;
+    max-width: 100%;
     padding: 21px 0 93px 0;
     background: url(../../img/bg.jpg) center center/ cover no-repeat;
 
@@ -12,7 +12,7 @@
     }
 
     @media screen and (max-width: 576px) {
-        max-height: 590px;
+        max-height: 100%;
         padding: 30px 0 30px 0;
     }
 
@@ -23,7 +23,7 @@
         align-items: flex-end;
         margin-top: 90px;
 
-        @media screen and (max-width: 576px) {
+        @media screen and (max-width: 768px) {
             margin-top: 50px;
             align-items: center;
         }
@@ -36,7 +36,7 @@
         color: variables.$white-color;
 
         // line-height: 24px;
-        @media screen and (max-width: 576px) {
+        @media screen and (max-width: 768px) {
             text-align: center;
             font-size: 30px;
 
@@ -51,7 +51,7 @@
         color: variables.$white-color;
 
         // line-height: 24px;
-        @media screen and (max-width: 576px) {
+        @media screen and (max-width: 768px) {
             text-align: center;
             font-size: 16px;
             margin-top: 10px;
@@ -65,6 +65,11 @@
         flex-direction: row;
         justify-content: space-between;
 
+        @media screen and (max-width: 425px) {
+            min-width: 90%;
+        }
+
+
     }
 
     &__icon {
@@ -73,6 +78,10 @@
         font-weight: 500;
         font-size: 14px;
         color: variables.$white-color;
+
+        @media screen and (max-width: 425px) {
+            width: 100%;
+        }
 
         img {
             margin-bottom: 20px;

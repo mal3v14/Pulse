@@ -6,12 +6,22 @@
     &__logo {
         max-width: 250px;
 
-        @media screen and (max-width: 576px) {
+        @media screen and (max-width: 768px) {
             width: 35%;
+        }
+
+        @media screen and (max-width: 576px) {
+            width: 50%;
+        }
+
+        @media screen and (max-width: 320px) {
+            width: 100%;
         }
 
         img {
             width: 100%;
+
+
         }
 
     }
@@ -24,11 +34,13 @@
         color: #fff;
 
 
+
+
         span {
             display: block;
             font-size: 18px;
 
-            @media screen and (max-width: 576px) {
+            @media screen and (max-width: 768px) {
                 font-size: 14px;
             }
         }
@@ -41,6 +53,11 @@
         flex-direction: column;
         align-items: flex-end;
         row-gap: 5px;
+
+        @media screen and (max-width: 320px) {
+            display: none;
+
+        }
     }
 
     &__phone {
@@ -50,10 +67,16 @@
         text-decoration: none;
         color: #fff;
 
-        @media screen and (max-width: 576px) {
+        @media screen and (max-width: 768px) {
             font-weight: 300;
             font-size: 15px;
         }
     }
 
+    &__rep {
+        @media screen and (max-width: 576px) {
+            display: none;
+
+        }
+    }
 }
