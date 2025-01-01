@@ -8,14 +8,6 @@
         padding: 40px 0;
     }
 
-    &__title {
-        font-weight: 700;
-        font-size: 30px;
-        text-align: center;
-        text-transform: uppercase;
-        color: black;
-    }
-
     &__wrapper {
         margin-top: 65px;
         display: flex;
@@ -58,7 +50,6 @@
 
 
         @media screen and (max-width: 768px) {
-
             max-width: 200px;
             margin-top: 5px;
         }

@@ -1,0 +1,16 @@
+@use "base/variables";
+
+.title {
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+
+    &_left {
+        color: variables.$white-color;
+        line-height: 150%;
+        font-size: 36px;
+        text-align: left;
+    }
+}
