@@ -5,11 +5,46 @@
     padding: 100px 0 90px 0;
     background: url(../../img/bg2.png) center (center/cover) no-repeat;
 
+    @media screen and (max-width: 425px) {
+        background: url(../../img/bg2_425px.png) center (center/cover) no-repeat;
+        padding: 50px 0 90px 0;
+    }
+
+    br {
+        @media screen and (max-width: 624px) {
+            display: none;
+        }
+    }
+
     &__descr {
         font-weight: 500;
         font-size: 20px;
         line-height: 150%;
         color: variables.$white-color;
+
+        @media screen and (max-width: 768px) {
+            text-align: center;
+        }
     }
 
+    &__wrapper {
+        @media screen and (max-width: 768px) {
+            display: flex;
+            justify-content: center;
+        }
+
+
+    }
+
+
+}
+
+.feed-form {
+    @media screen and (max-width: 768px) {
+        width: 50vw;
+    }
+
+    @media screen and (max-width: 425px) {
+        width: 70vw;
+    }
 }

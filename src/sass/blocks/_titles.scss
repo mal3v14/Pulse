@@ -12,5 +12,15 @@
         line-height: 150%;
         font-size: 36px;
         text-align: left;
+
+        @media screen and (max-width: 768px) {
+            text-align: center;
+            font-size: 26px;
+        }
+
+        @media screen and (max-width: 425px) {
+            font-size: 22px;
+            line-height: 135%;
+        }
     }
 }
