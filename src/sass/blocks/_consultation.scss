@@ -3,10 +3,10 @@
 .consultation {
     min-height: 680px;
     padding: 100px 0 90px 0;
-    background: url(../../img/bg2.png) center (center/cover) no-repeat;
+    background: url(../img/bg2.png) center (center/cover) no-repeat;
 
     @media screen and (max-width: 425px) {
-        background: url(../../img/bg2_425px.png) center (center/cover) no-repeat;
+        background: url(../img/bg2_425px.png) center (center/cover) no-repeat;
         padding: 50px 0 90px 0;
     }
 
