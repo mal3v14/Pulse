@@ -11,8 +11,8 @@
 
     }
 
-    .slick-prev,
-    .slick-next {
+    .prev,
+    .next {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -26,8 +26,21 @@
         }
     }
 
-    .slick-next {
+    .next {
         left: auto;
         right: -66px;
+    }
+
+    .tns-item {
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .tns-nav {
+        button {
+            background-color: red;
+        }
     }
 }
