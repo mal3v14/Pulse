@@ -11,6 +11,7 @@
     text-align: center;
     color: variables.$white-color;
     border: none;
+    cursor: pointer;
 
     &_main {
         width: 300px;
@@ -31,5 +32,11 @@
         font-size: 16px;
         height: 55px;
         border: radius 5px;
+    }
+
+    &_mini {
+        width: 130px;
+        height: 40px;
+        font-size: 14px;
     }
 }
