@@ -46,10 +46,14 @@
     }
 
     &__content {
-        display: flex;
+        display: none;
         justify-content: space-between;
         margin-top: 40px;
         flex-wrap: wrap;
+
+        &_active {
+            display: flex;
+        }
     }
 
     &-item {
