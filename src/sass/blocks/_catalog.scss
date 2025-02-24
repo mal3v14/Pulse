@@ -9,7 +9,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 10px
+        gap: 10px;
+
+        @media screen and (max-width: 600px) {
+            flex-direction: column;
+            align-items: center
+        }
     }
 
     &__tab {
@@ -47,7 +52,7 @@
 
     &__content {
         display: none;
-        justify-content: space-between;
+        justify-content: space-evenly;
         margin-top: 40px;
         flex-wrap: wrap;
 

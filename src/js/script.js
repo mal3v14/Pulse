@@ -7,6 +7,8 @@ const slider = tns({
     autoplay: false,
     controls: false,
     nav: false,
+    preventScrollOnTouch: "auto",
+    mouseDrag: true,
 });
 
 document.querySelector('.prev').addEventListener('click', function () {
