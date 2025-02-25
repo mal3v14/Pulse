@@ -10,7 +10,12 @@
 @use "blocks/carousel";
 @use "blocks/catalog";
 @use "blocks/feedback";
+@use "blocks/footer";
 
 * {
   font-family: "Museo Sans Cyrl", sans-serif;
+
+  address {
+    font-style: normal;
+  }
 }

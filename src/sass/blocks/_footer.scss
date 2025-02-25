@@ -1,0 +1,65 @@
+@use "base/variables";
+
+.footer {
+    min-width: 630px;
+    position: relative;
+
+
+
+    &__info {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 460px;
+        height: 260px;
+        background-color: variables.$main-color;
+        padding: 50px 70px 60px 70px;
+
+        @media screen and (max-width: 768px) {
+            width: 50%;
+        }
+
+
+
+
+
+    }
+
+    &__addr {
+        margin-bottom: 36px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+        color: variables.$white-color;
+    }
+
+    &__phone {
+        display: block;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+        color: variables.$white-color;
+        margin-bottom: 40px;
+        text-decoration: none;
+
+        &:hover {
+            color: variables.$white-color;
+        }
+    }
+
+    &__social-item {
+        // width: 53px;
+        // height: 52px;
+        margin: 0 15px;
+
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
