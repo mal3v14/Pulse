@@ -11,6 +11,7 @@
 @use "blocks/catalog";
 @use "blocks/feedback";
 @use "blocks/footer";
+@use "blocks/modal";
 
 * {
   font-family: "Museo Sans Cyrl", sans-serif;
@@ -18,4 +19,9 @@
   address {
     font-style: normal;
   }
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
