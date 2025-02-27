@@ -82,6 +82,70 @@ document.querySelector('.next').addEventListener('click', function () {
             $('.overlay, #order').fadeIn('slow');
         });
     });
+
+    // $('#consultation-form').validate();
+    // $('#consultation form').validate({
+    //     rules: {
+    //         name: {
+    //             required: true,
+    //             minlength: 2
+    //         },
+    //         phone: "required",
+    //         email: {
+    //             required: true,
+    //             email: true,
+    //         }
+    //     },
+    //     messages: {
+    //         name: {
+    //             required: "Пожалуйста, введите своё имя",
+    //             minlength: jQuery.validator.format("Введите минимум {0} символа!")
+    //         },
+    //         phone: "Пожалуйста, введите свой номер телефона",
+    //         email: {
+    //             required: "Пожалуйста, введите свою почту",
+    //             email: "Неправильно введён адрес почты"
+    //         }
+    //     }
+    // });
+
+
+    // $('#order form').validate();
+
+    function validateForms(form) {
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true,
+                }
+            },
+            messages: {
+                name: {
+                    required: "Пожалуйста, введите своё имя",
+                    minlength: jQuery.validator.format("Введите минимум {0} символа!")
+                },
+                phone: "Пожалуйста, введите свой номер телефона",
+                email: {
+                    required: "Пожалуйста, введите свою почту",
+                    email: "Неправильно введён адрес почты"
+                }
+            }
+        });
+    }
+
+    validateForms('#consultation-form');
+    validateForms('#consultation form');
+    validateForms('#order form');
+
+    $('input[name=phone]').mask("+38 (999) 999-99-99");
+
+
 })(jQuery);
 
 
