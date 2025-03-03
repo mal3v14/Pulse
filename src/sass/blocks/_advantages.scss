@@ -54,4 +54,18 @@
             margin-top: 5px;
         }
     }
+
+    &__icon {
+        &_animated {
+            animation: hearthbeat 2s ease infinite;
+            // animation-name: hearthbeat;
+            // animation-duration: 2s;
+            // animation-timing-function: ease;
+            // animation-iteration-count: infinite;
+
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+    }
 }
