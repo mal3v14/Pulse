@@ -10,6 +10,7 @@
   "description": "",
   "devDependencies": {
     "browser-sync": "^3.0.3",
+    "del": "^6.1.1",
     "gulp": "^5.0.0",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-clean-css": "^4.3.0",
@@ -19,6 +20,6 @@
     "sass": "^1.83.0"
   },
   "dependencies": {
-    "gulp-imagemin": "^7.1.0"
+    "gulp-imagemin": "^9.1.0"
   }
 }
