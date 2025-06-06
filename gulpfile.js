@@ -44,7 +44,9 @@ gulp.task('build', gulp.series('clean', 'styles', function () {
         'src/css/**/*',
         'src/js/**/*',
         'src/img/**/*',
-        'src/fonts/**/*'
+        'src/fonts/**/*',
+        'src/icons/**/*'
+
     ], { base: 'src' })
         .pipe(gulp.dest('docs'));
 }));

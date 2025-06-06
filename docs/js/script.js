@@ -142,7 +142,7 @@ document.querySelector('.next').addEventListener('click', function () {
     $("#up").on('click', function (event) {
 
         $('html, body').animate({
-            scrollTop: $(_href).offset().top
+            scrollTop: $(href).offset().top
         }, 800, function () {
 
             window.location.hash = hash;
